@@ -1,0 +1,24 @@
+---
+server:
+  port: "8888"
+
+configFolderPath: "/root/enb/config"
+cmdDirectory: "/root/enb/config"
+
+serviceFile: "enb.cfg"
+
+LogFolderPath: "log"
+LogFileName : "AppMananger.log"
+
+log:
+  LogLevel: "INFO"
+  LogMaxSize: 5    // Maximum size in megabytes before log rotation
+  LogMaxAge: 3    // Maximum number of days to retain old log files
+  LogMaxBackups: 28   // Maximum number of old log files to retain
+  LogCompress: true // Compress determines if the rotated log files should be compressed using gzip.
+
+rfCard:
+  scriptPath : "/root/network-emulator/"
+  scriptName: "rf_info.sh"
+  filePath : "/root/"
+  fileName : ".sdr_check_result.txt"

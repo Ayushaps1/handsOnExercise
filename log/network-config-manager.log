@@ -1,0 +1,11 @@
+{"time":"2024-04-10T16:24:54.4771298+05:30","level":"INFO","prefix":"echo","file":"migrate.go","line":"42","message":"Up migration completed"}
+
+   ____    __
+  / __/___/ /  ___
+ / _// __/ _ \/ _ \
+/___/\__/_//_/\___/ v4.1.16
+High performance, minimalist Go web framework
+https://echo.labstack.com
+____________________________________O/_______
+                                    O\
+⇨ http server started on [::]:8080

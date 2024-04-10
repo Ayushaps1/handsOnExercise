@@ -1,0 +1,41 @@
+database:
+    filename: network-config-manager.db
+log:
+    filename: network-config-manager.log
+server:
+    port: 8080
+
+AppManager:
+    BaseURL: http://192.168.1.62:8888
+    StartEndPoint: /config/start
+    StopEndPoint: /config/stop
+    RfCardInfoEndPoint : /rfCard
+
+Log:
+    FolderPath : log
+    FileName   : network-config-manager.log
+    LogLevel : INFO
+    LogMaxSize   : 5    # Maximum size in megabytes before log rotation
+    LogMaxAge    : 3    # Maximum number of days to retain old log files
+    LogMaxBackups: 28   # Maximum number of old log files to retain
+    LogCompress  : true # Compress determines if the rotated log files should be compressed using gzip.
+
+AccessTokenExpiryHour: 3
+RefreshTokenExpiryHour: 120
+
+Template:
+    FolderPath : template
+    NsaFileName : gnb-nsa-template.cfg
+    SaFileName : gnb-sa-template.cfg
+
+Configuration:
+    FolderPath    : /root/enb/config/   #configurations/
+    FileExtension : .cfg
+
+Migration:
+    LatestVersion : 1
+    SourceFileURL : file://database/migration
+
+DB:
+    FolderPath : data
+    FileName   : network-config-manager.db
